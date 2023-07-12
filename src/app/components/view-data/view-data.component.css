@@ -1,0 +1,32 @@
+.container{
+  width: 90%;
+  height: 100vh;
+  color :rgb(110, 110, 110); /* rgb(200, 200, 200) aliceblue */
+  margin: 0 auto;
+ /* border: 1px dashed black; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.containerGraph{
+  width: 1fr;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.containerGraph__gauge{
+ /*  background:rgb(255, 255, 255);
+  border: 1px solid rgb(30, 30,30);  */
+  width: 1fr;
+  height: 50vh;
+
+
+
+
+}
+.containerGraph__chart{
+ /* background:rgb(30, 30,30); */
+ width: 4fr;
+
+}
