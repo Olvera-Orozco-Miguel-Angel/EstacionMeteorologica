@@ -1,13 +1,22 @@
 .container{
   width: 90%;
   height: 100vh;
-  color :rgb(110, 110, 110); /* rgb(200, 200, 200) aliceblue */
+  color :rgb(110, 110, 110); /* rgb(200, 200, 200) aliceblue  | este color es rgb(110, 110, 110); cuando se ve blanco la pantalla*/
   margin: 0 auto;
  /* border: 1px dashed black; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 
+}
+h3{
+  width: 1fr;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(110, 110, 110);
+  text-align: center;
+  margin-bottom: 10px;
+  background: #ba9df4;
 }
 .containerGraph{
   width: 1fr;
@@ -18,15 +27,16 @@
 .containerGraph__gauge{
  /*  background:rgb(255, 255, 255);
   border: 1px solid rgb(30, 30,30);  */
-  width: 1fr;
-  height: 50vh;
 
+  border-radius: 10px;
+  border: 1px solid rgb(110, 110, 110);
+  box-shadow: 1px 1px 1px 1px rgb(110, 110, 110);
 
 
 
 }
 .containerGraph__chart{
  /* background:rgb(30, 30,30); */
- width: 4fr;
+ width: 400px;
 
 }

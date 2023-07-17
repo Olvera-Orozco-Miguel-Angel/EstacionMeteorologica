@@ -1,20 +1,24 @@
 <div  class="container">
   <!-- Temperature -->
-  <div class="containerGraph">
-    <ngx-gauge class = "containerGraph__gauge"
-    [value]="temperatureValue"
-     type="arch"
-     [thick]="gauegeThik"
-     cap="round"
-     [max]=300
-     [size]=220
-     label="Temperature"
-     append="C°"
-     >
-  </ngx-gauge>
-  <div  class="containerGraph__chart">
-    <canvas id="ctx" style="width: 400px;"></canvas>
-  </div>
+  <div class="containerSon">
+    <h3>Temperatura</h3>
+    <div class="containerGraph" >
+      <ngx-gauge class = "containerGraph__gauge"
+      [value]="temperatureValue"
+       type="arch"
+       [thick]="gauegeThik"
+       cap="round"
+       [max]=300
+       [size]=220
+       label="Temperature"
+       append="C°"
+       >
+    </ngx-gauge>
+    <div  class="containerGraph__chart">
+      <canvas id="ctx"></canvas>
+    </div>
+    </div>
+
   </div>
 
   <div class="containerGraph">

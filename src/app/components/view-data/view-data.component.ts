@@ -58,7 +58,10 @@ constructor( private socket : SocketServerService ){
   });
 
   this.socket.getRealData().subscribe((message: any) => {
-    console.log(message);
+    console.log(message.temperature);
+    console.log(message.pressure);
+    console.log(message.altitud);
+    console.log(message.air_quality);
    });
 }
 ngOnInit(): void {
