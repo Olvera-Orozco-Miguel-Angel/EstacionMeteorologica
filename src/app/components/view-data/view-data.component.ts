@@ -91,8 +91,14 @@ ngOnInit(): void {
           grid: {
             display: false // Oculta la cuadrícula del eje y
           }
+        },
+
+      },
+      plugins: {
+        legend: {
+          display: false, // Ocultar la leyenda
         }
-      }
+      },
     }
   });
 
