@@ -1,9 +1,8 @@
-<h1>Estación meteorologica CCAI</h1>
+<!-- <h1>Estación meteorologica CCAI</h1> -->
 <div  class="container">
 
   <!-- Temperature -->
   <div class="containerSon">
-    <h3>Temperatura</h3>
     <div class="containerGraph" >
       <ngx-gauge class = "containerGraph__gauge"
           [value]="temperatureValue"
@@ -77,9 +76,22 @@
 
 
 
+  </div>
 
+  <ngx-gauge
+  [value]="20"
+   type="arch"
+   [thick]="8"
+   cap="round"
+   [max]=300
+   [size]=100
+   label="Pressure"
+   append="C°"
+  >
+</ngx-gauge>
+
+  <div class="contenedor-3d">
+    <p>Temperatura: 25°C</p>
   </div>
 
 
-
-  

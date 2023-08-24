@@ -6,9 +6,10 @@
 }
 /* rgb(50, 50, 50); rgb(27, 27, 27)
 background: rgb(15, 15,15);
+rgb(220, 220, 220); se ve blanco con este fondo
 */
 body{
-  background: rgb(220, 220, 220);
+  background: #0A090C ;
   font-family: 'Hanken Grotesk', sans-serif;
 /*overflow: hidden;*/
 
