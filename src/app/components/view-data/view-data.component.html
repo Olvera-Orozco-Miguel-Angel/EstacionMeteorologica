@@ -1,26 +1,121 @@
 <!-- <h1>Estación meteorologica CCAI</h1> -->
 <div  class="container">
 
-  <!-- Temperature -->
-  <div class="containerSon">
-    <div class="containerGraph" >
-      <ngx-gauge class = "containerGraph__gauge"
-          [value]="temperatureValue"
-          type="arch"
-          [thick]="gauegeThik"
-          cap="round"
-          [max]=300
-          [size]=220
-          label="Temperature"
-          append="C°"
+  <!-- Temperature  temperatureValue -->
+  <div class="containerGeneralBMP180">
+    <div style="margin-right: 15px;">
+      <div class="containerbmp180">
+        <h2>Pressure</h2>
+        <div class="subContainerbmp180">
+
+          <ngx-gauge
+          [value]="1030"
+           type="arch"
+           [thick]="8"
+           cap="round"
+           [max]=3000
+           [size]=100
+
+
           >
-      </ngx-gauge>
-      <div  class="containerGraph__chart">
-        <canvas id="ctx"></canvas>
+        </ngx-gauge>
+        <span>hpa </span>
+        </div>
+
+      </div>
+      <div class="containerbmp180">
+        <h2>Altitud</h2>
+        <div class="subContainerbmp180">
+
+              <ngx-gauge
+              [value]="2240"
+              type="arch"
+              [thick]="8"
+              cap="round"
+              [max]=3000
+              [size]=100
+
+
+              >
+
+            </ngx-gauge>
+            <span>meters</span>
+        </div>
+
       </div>
     </div>
 
+
+
+
+
+    <div class="containerTemperature">
+      <div class="subContainerTemperature">
+        <h2>Temperature</h2>
+          <ngx-gauge class = "containerGraph__gauge"
+              [value]="35"
+              type="arch"
+              [thick]="10"
+              cap="round"
+              [max]=80
+              [size]=150
+              append="C°"
+              >
+          </ngx-gauge>
+          <span>Templado</span>
+      </div>
+
+      <div  class="containerGraph__chart">
+        <canvas id="ctx" width="1000" height="400" ></canvas>
+      </div>
+
+    </div>
+
   </div>
+
+<!-- Esta sección es para el pluviometro, anenometro y veleta -->
+<div>
+  <div class="containerbmp180">
+    <h2>Air Quality/CO2</h2>
+    <div class="subContainerbmp180">
+
+      <ngx-gauge
+      [value]="1030"
+       type="arch"
+       [thick]="8"
+       cap="round"
+       [max]=3000
+       [size]=100
+
+
+      >
+    </ngx-gauge>
+    <span>pm </span>
+    </div>
+
+  </div>
+
+  <div class="containerbmp180">
+    <h2>Ultraviolet rays</h2>
+    <div class="subContainerbmp180">
+
+      <ngx-gauge
+      [value]="8"
+       type="arch"
+       [thick]="8"
+       cap="round"
+       [max]=10
+       [size]=100
+
+
+      >
+    </ngx-gauge>
+    <span>Whats / m2 </span>
+    </div>
+
+  </div>
+</div>
+
 
   <div class="containerGraph">
     <ngx-gauge
@@ -35,10 +130,11 @@
       append="C°"
       >
     </ngx-gauge>
-    <div  class="containerGraph__chart">
-      <canvas id="altitud"  ></canvas>
-    </div>
+
   </div>
+
+
+
   <div class="containerGraph">
   <ngx-gauge
     [value]="pressureValue"
@@ -51,9 +147,7 @@
      append="C°"
     >
   </ngx-gauge>
-  <div  class="containerGraph__chart">
-    <canvas id="presion"  ></canvas>
-  </div>
+
   </div>
 
   <div class="containerGraph">
@@ -69,29 +163,15 @@
 
              >
   </ngx-gauge>
-  <div  class="containerGraph__chart">
-    <canvas id="calidad"  ></canvas>
-  </div>
+
   </div>
 
 
 
   </div>
 
-  <ngx-gauge
-  [value]="20"
-   type="arch"
-   [thick]="8"
-   cap="round"
-   [max]=300
-   [size]=100
-   label="Pressure"
-   append="C°"
-  >
-</ngx-gauge>
 
-  <div class="contenedor-3d">
-    <p>Temperatura: 25°C</p>
-  </div>
+
+
 
 

@@ -31,14 +31,15 @@ export class ViewDataComponent implements OnInit{
 
 
   gauegeThik:any=14;
-  size:any = 200;
+  size:any = 400;
   data :any = 15;
   arrayPrueba:any = [12, 19, 3, 5, 2, 3];
+
   dataChartTemperatura = {
-    labels: ['1:30', '2:00', '3:00', '4:00', '5:00', '6:00', '7:00'],
+    labels: ['1:30', '2:00', '3:00', '4:00', '5:00', '6:00', '7:00','1:30', '2:00'],
     datasets: [{
       label: 'Temperature',
-      data: [65, 59, 80, 81, 26, 55, 40],
+      data: [65, 59, 80, 81, 26, 55, 40,65, 59, 80 ],
       fill:"start",
       borderColor: 'rgb(75, 192, 192)',
     }]
@@ -69,6 +70,8 @@ ngOnInit(): void {
   const myChart = new Chart("ctx", {
     type: 'line',
     data: this.dataChartTemperatura,
+
+
     options: {
       animations: {
         tension: {
@@ -81,14 +84,19 @@ ngOnInit(): void {
       },
       scales: {
         x: {
+
+
+
           grid: {
             display: false // Oculta la cuadrícula del eje x
-          }
+          },
+
         },
         y: { // defining min and max so hiding the dataset does not change scale range
           min: 0,
           max: 100,
           grid: {
+
             display: false // Oculta la cuadrícula del eje y
           }
         },
@@ -101,7 +109,7 @@ ngOnInit(): void {
       },
     }
   });
-
+/*
   const myChart2 = new Chart("altitud", {
     type: 'line',
     data: this.dataChartTemperatura,
@@ -192,7 +200,7 @@ ngOnInit(): void {
     }
   });
 
-
+ */
 
 }
 }
