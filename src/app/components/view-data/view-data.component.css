@@ -30,7 +30,7 @@ h2{
 
 
 }
-.containerTemperature{
+.containerResults{
   width: 100%;
   height: 240;
 display: grid;
@@ -110,4 +110,37 @@ h3{
   text-align: center;
   margin-bottom: 10px;
   background:  rgb(255, 255, 255);
+}
+
+/* sensores mq131, sensores mq135 y rayos ultra violeta  */
+.containerSensoresMQU{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*  */
+.subContainer__WindSpeed{
+  width: 300px;
+  height: 240px;
+  background: rgb(29,27,30,0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+.subContainer__WindSpeed{
+  width: 300px;
+  height: 240px;
+  background: rgb(29,27,30,0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
 }

@@ -49,7 +49,7 @@
 
 
 
-    <div class="containerTemperature">
+    <div class="containerResults">
       <div class="subContainerTemperature">
         <h2>Temperature</h2>
           <ngx-gauge class = "containerGraph__gauge"
@@ -74,9 +74,9 @@
   </div>
 
 <!-- Esta sección es para el pluviometro, anenometro y veleta -->
-<div>
+<div class="containerSensoresMQU">
   <div class="containerbmp180">
-    <h2>Air Quality/CO2</h2>
+    <h2>CO2</h2>
     <div class="subContainerbmp180">
 
       <ngx-gauge
@@ -86,11 +86,9 @@
        cap="round"
        [max]=3000
        [size]=100
-
-
       >
     </ngx-gauge>
-    <span>pm </span>
+    <span>ppm </span>
     </div>
 
   </div>
@@ -104,67 +102,93 @@
        type="arch"
        [thick]="8"
        cap="round"
-       [max]=10
+       [max]=11
        [size]=100
 
 
       >
     </ngx-gauge>
-    <span>Whats / m2 </span>
+    <span>UV Index</span>
+    </div>
+    <span>Baja</span>
+
+  </div>
+
+  <div class="containerbmp180">
+    <h2>O3</h2>
+    <div class="subContainerbmp180">
+
+      <ngx-gauge
+      [value]="0.095"
+       type="arch"
+       [thick]="8"
+       cap="round"
+       [max]=1
+       [size]=100
+
+
+      >
+    </ngx-gauge>
+    <span>ppm </span>
     </div>
 
   </div>
 </div>
 
+<!-- esta sección es para el pluviometro-->
+<!-- contenedor para el de pluviometro -->
+<div class="containerSensoresMQU">
+  <div class="subContainer__WindSpeed" >
+    <h2>Wind Speed</h2>
+    <div class="subContainerbmp180">
+        <ngx-gauge [value]="8"
+        type="semi"
+        [thick]="13"
+        cap="round"
+        [size]="200"
+        label=""
+        append="km/h">
+        </ngx-gauge>
+    </div>
 
-  <div class="containerGraph">
-    <ngx-gauge
+    </div>
 
-      [value]="altitudeValue"
-      type="arch"
-      [thick]="gauegeThik"
-      cap="round"
-      [max]=300
-      [size]=220
-      label="Altitude"
-      append="C°"
-      >
-    </ngx-gauge>
+    <div>
 
-  </div>
+      <div class="containerResults">
+        <div class="subContainer__WindSpeed">
+          <h2>Wind Direction</h2>
+            <ngx-gauge class = "containerGraph__gauge"
+                [value]="35"
+                type="arch"
+                [thick]="10"
+                cap="round"
+                [max]=80
+                [size]=150
+                append="C°"
+                >
+            </ngx-gauge>
+            <span>Templado</span>
+        </div>
 
 
 
-  <div class="containerGraph">
-  <ngx-gauge
-    [value]="pressureValue"
-     type="arch"
-     [thick]="gauegeThik"
-     cap="round"
-     [max]=300
-     [size]=220
-     label="Pressure"
-     append="C°"
-    >
-  </ngx-gauge>
+      </div>
 
-  </div>
 
-  <div class="containerGraph">
-  <ngx-gauge
-            [size]=200
-             type="arch"
-             [thick]="gauegeThik"
-             [value]="airQualityValue"
-             cap="butt"
-             label="Air quality"
-             append="C"
-             [markers]="markerConfig"
 
-             >
-  </ngx-gauge>
+    </div>
 
-  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
