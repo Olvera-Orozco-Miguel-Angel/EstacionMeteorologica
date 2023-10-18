@@ -15,6 +15,7 @@
            cap="round"
            [max]=3000
            [size]=100
+           backgroundColor = "rgba(0, 0, 0, 0.2)"
 
 
           >
@@ -34,6 +35,7 @@
               cap="round"
               [max]=3000
               [size]=100
+              backgroundColor = "rgba(0, 0, 0, 0.2)"
 
 
               >
@@ -60,6 +62,7 @@
               [max]=80
               [size]=150
               append="C°"
+              backgroundColor = "rgba(0, 0, 0, 0.2)"
               >
           </ngx-gauge>
           <span>Templado</span>
@@ -86,6 +89,7 @@
        cap="round"
        [max]=3000
        [size]=100
+       backgroundColor = "rgba(0, 0, 0, 0.2)"
       >
     </ngx-gauge>
     <span>ppm </span>
@@ -104,7 +108,7 @@
        cap="round"
        [max]=11
        [size]=100
-
+       backgroundColor = "rgba(0, 0, 0, 0.2)"
 
       >
     </ngx-gauge>
@@ -125,7 +129,7 @@
        cap="round"
        [max]=1
        [size]=100
-
+       backgroundColor = "rgba(0, 0, 0, 0.2)"
 
       >
     </ngx-gauge>
@@ -147,37 +151,49 @@
         cap="round"
         [size]="200"
         label=""
-        append="km/h">
+        append="km/h"
+        backgroundColor = "rgba(0, 0, 0, 0.2)"
+        >
         </ngx-gauge>
     </div>
 
     </div>
 
     <div>
+      <div class="subContainer__WindSpeed" >
+        <h2>Wind Direction</h2>
+          <div class="wrapper" >
 
-      <div class="containerResults">
-        <div class="subContainer__WindSpeed">
-          <h2>Wind Direction</h2>
-            <ngx-gauge class = "containerGraph__gauge"
-                [value]="35"
-                type="arch"
-                [thick]="10"
-                cap="round"
-                [max]=80
-                [size]=150
-                append="C°"
-                >
-            </ngx-gauge>
-            <span>Templado</span>
-        </div>
+            <div class="number-hours">
 
+                <span style="--index:1" > <p>NNE</p>  </span>
+                <span style="--index:2" > <p>NE</p>  </span>
+                <span style="--index:3" > <p>ENE</p>  </span>
+                <span style="--index:4" > <p>E</p>  </span>
+                <span style="--index:5" > <p>ESE</p>  </span>
+                <span style="--index:6" > <p>SE</p>  </span>
+                <span style="--index:7" > <p>SSE</p>  </span>
+                <span style="--index:8" > <p>S</p>  </span>
+                <span style="--index:9" > <p>SSO</p>  </span>
+                <span style="--index:10" > <p>SO</p>  </span>
+                <span style="--index:11" > <p>OSO</p>  </span>
+                <span style="--index:12" > <p>O</p>  </span>
+                <span style="--index:13" > <p>ONO</p>  </span>
+                <span style="--index:14" > <p>NO</p>  </span>
+                <span style="--index:15" > <p>NNO</p>  </span>
+                <span style="--index:16" > <p>N</p>  </span>
+            </div>
 
-
+          </div>
+          <span>Templado</span>
       </div>
 
 
 
     </div>
+
+
+
 
 </div>
 
